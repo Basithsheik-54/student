@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h2>Welcome, <%= user %>!</h2>
+    <p>This is your dashboard.</p>
+    <a href="/games">Go to Games</a>
+    <form action="/logout" method="POST" style="display: inline;">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
