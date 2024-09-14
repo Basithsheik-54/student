@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecart Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Ensure you have a stylesheet for styling -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome, <%= user %></h1>
+            <form action="/logout" method="POST">
+                <button type="submit" class="logout-button">Logout</button>
+            </form>
+        </div>
+
+        <h2>Featured Movies</h2>
+        <div class="movies">
+            <!-- Example movie entries -->
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDMpAlJvlbciO5em4u21B89yiMny281qjqw&s" alt="Movie 1">
+                <div class="movie-title">Electronics</div>
+            </div>
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_YYOCm_T-gW-sCwy2BmbxKs1IEgwENTFjGA&s" alt="Movie 2">
+                <div class="movie-title">SkinCare</div>
+            </div>
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0wGDDXSrMGT1vqn-mdftOFHOoOeYfD5HNOw&s " alt="Movie 3">
+                <div class="movie-title">Fashion</div>
+            </div>
+            <!-- Add more movie entries as needed -->
+        </div>
+    </div>
+</body>
+</html>
